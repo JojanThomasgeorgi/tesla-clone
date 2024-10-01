@@ -1,0 +1,334 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color:white ;
+}
+.logo{
+    width: 133px;
+    margin-left: 18px;
+}
+/*top nav bar*/
+.nav-container{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 20px;
+    height: 59px;
+    color: white;
+    z-index: 1000;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+
+.nav-container ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 15px;
+}
+.nav-container li:hover{
+    
+    color: black;
+    
+}
+.nav-container:hover{
+    
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 67%;
+    transition: 0.8s;
+}
+
+
+.pages{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    flex-direction: column;
+}
+.pages li{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 99vw;
+    justify-content: space-between;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    color: white;
+    scroll-snap-align: start;
+}
+.pages li img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.icons{
+    display: flex;
+    gap: 11px;
+    width: 119px;
+    font-size: 24px;
+    font-weight: 100;
+}
+.page-info{
+    padding-top: 20px;
+}
+.page-info h1{
+    font-size: 58px;
+    font-weight: bolder;
+}
+.page-footer.buttons{
+    margin-bottom: 25px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.page-footer.buttons button{
+    font-size: 13px;
+    padding: 37% 80px;
+    border-radius: 5px;
+    
+    cursor: pointer;
+}
+
+
+.page footer p,
+.page footer a{
+    font-size: 12px;
+    color: #fff;
+}
+/* button customs */
+button{
+    width: 263px;
+    height: 42px;
+    border-radius: 5px;
+    
+    margin-left: 14px;
+    margin-bottom: 22px;
+    
+}
+.but1{
+    border: none;
+}
+.blue-button{
+    border: none;
+}
+.blue-button{
+    color: #fff;
+    font-weight: bolder;
+    background-color: #3e6ae1;
+}
+/* paragraph */
+p{
+    font-size: 27px;
+    font-weight: 600;
+    
+}
+/*underline texts*/
+.p1,.p2{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 4%;
+}
+.para3{
+    position:absolute;
+    font-size: 17px;
+    top: 25%;
+    left: 42%;
+    line-height: 22px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 6%;
+}
+.para4{
+    position:absolute;
+    font-size: 17px;
+    top: 25%;
+    left: 42%;
+    line-height: 22px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 6%;
+}
+.solarpara{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 4%;
+    transition: 0.9s;
+}
+
+/* underline animation */
+.solarpara:hover{
+    text-decoration-thickness: 6%;
+    transition: 0.9s;
+}
+.para3:hover{
+    text-decoration-thickness: 8%;
+}
+.para4:hover{
+    text-decoration-thickness: 8%; 
+}
+
+
+/* ---------------------------------- */
+.footer-terms{
+    font-size: 13px;
+    font-weight: lighter;
+    color: #d0d1d2;
+}
+.pages li.footerpage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 99vw;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 10px;
+    
+    scroll-snap-align: start;
+}
+p{
+    line-height: 17px;
+}
+span{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+/*footer portion*/
+.footerdiv ul{
+    text-align: center;
+}
+
+.footerdiv li{
+    padding-top: 10px;
+    display: inline-block;
+    align-content: center;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #d0d1d2;
+    padding-bottom: 30px;
+    
+}
+
+/*grey buttons cybertruck*/
+button.grey-buttton{
+    background-color: #111111;
+    color: #A2A3A5;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: #A2A3A5;
+    /* border: 24px; */
+    border-width: thin;
+    transition: 0.6s; 
+}
+button.grey-buttton:hover{
+    opacity: 80%;
+    transition: 0.6s;
+}
+
+button.grey1-buttoncyber{
+    background-color: #111111;
+    border-radius: 0px;
+    color: #A2A3A5; 
+    border: 2px solid black;
+    transition: 0.6s;
+    
+}
+button.grey1-buttoncyber:hover{
+    opacity: 80%;
+    transition: 0.6s;
+}
+/*cyburtruck logo*/
+.page-info-model-cybertruck img.logopng{
+    width: 32%;
+    
+    padding-left: 31%;
+    padding-top: 5%;
+  
+}
+/* img.foundation{
+    display: flex;
+    max-width: 67%;
+    max-height: 35%;
+    align-items: center;
+    padding-left: 32%;
+    padding-top: 2%;
+} */
+
+.foundation{
+    
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.head1,.head2{
+    font-size: 60px;
+    font-weight: bolder;
+    position: absolute;
+    left: 39%;
+    top: 90px;
+}
+/* main head costomize */
+.mainhead1,.mainhead2{
+    font-size: 60px;
+    font-weight: bolder;
+    position: absolute;
+    left: 43%;
+    top: 90px;
+    text-align: center;
+    
+}
+.mainhead3{
+    font-size: 60px;
+    font-weight: bolder;
+    position: absolute;
+    left: 43%;
+    top: 90px;
+    text-align: center;
+}
+.mainhead4{
+    font-size: 60px;
+    font-weight: bolder;
+    position: absolute;
+    left: 43%;
+    top: 90px;
+    text-align: center;
+}
+
+.mainhead5{
+    font-size: 60px;
+    font-weight: bolder;
+    position: absolute;
+    left: 38%;
+    top: 90px;
+    text-align: center;   
+}
+.mainhead6{
+    font-size: 60px;
+    font-weight: bolder;
+    position: absolute;
+    left: 40%;
+    top: 90px;
+    text-align: center;                           
+}
